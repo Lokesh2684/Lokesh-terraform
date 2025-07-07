@@ -30,7 +30,7 @@ module "linux_vm" {
   resource_group_name = var.resource_group_name
   location            = var.location
   vm_name             = "${var.prefix}-vm-${count.index}"
-  admin_username      = var.vm_admin_username       # <-- match tfvars
+  admin_username      = var.vm_admin_username       
   admin_password      = var.vm_admin_password
   ssh_public_key      = var.ssh_public_key
   vm_size             = var.vm_size
