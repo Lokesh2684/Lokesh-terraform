@@ -11,9 +11,9 @@ module "sql_server" {
   source              = "./modules/sql_server"
   resource_group_name = var.resource_group_name
   location            = var.location
-  sql_admin_username  = var.sql_admin_username       # <-- use consistent name
+  sql_admin_username  = var.sql_admin_username       
   sql_admin_password  = var.sql_admin_password
-  server_name         = var.sql_server_name          # <-- pass from tfvars
+  server_name         = var.sql_server_name          
 }
 
 module "sql_database" {
