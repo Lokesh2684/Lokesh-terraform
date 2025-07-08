@@ -4,8 +4,9 @@ data "azurerm_mssql_server" "sql" {
 }
 
 resource "azurerm_mssql_database" "db" {
-  name      = var.database_name
-  server_id = data.azurerm_mssql_server.sql.id
-  sku_name  = "Basic"
+  name           = var.database_name
+  server_id      = data.azurerm_mssql_server.sql.id
+  sku_name       = "Basic"
+  max_size_gb    = 2
+  zone_redundant = false
 }
- 
