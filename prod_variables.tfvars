@@ -1,4 +1,4 @@
-resource_group_name  = "Lokesh-RSG"
+resource_group_name  = "Lokesh-RSG-1"
 location             = "East US"
 sql_admin_username   = "sqladmin123"
 sql_admin_password   = "Access@2684"
