@@ -13,3 +13,4 @@ variable "server_name" {
 variable "database_name" {
   type        = string
 }
+
